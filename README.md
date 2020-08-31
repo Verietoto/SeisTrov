@@ -11,3 +11,6 @@ SEGY, SGY, and npy extension. for 2D SEGY, SGY, or npy data (without geometries)
 
 ## Dyniamic DashBoard
 ![ezgif com-video-to-gif(1)](https://user-images.githubusercontent.com/59665617/91686378-53f68a80-eb87-11ea-91e2-e50a09e6e3c6.gif)
+
+## plot both 2D and 3D
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/59665617/91686464-899b7380-eb87-11ea-9d64-c7376d154687.gif)
