@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="GIF">
+    <file>Avatar3</file>
+    <file>background.gif</file>
+    <file>Avatar2</file>
+  </qresource>
+  <qresource prefix="Image">
+    <file>myPhoto.png</file>
+    <file>myPhoto.png</file>
+    <file>swipe.png</file>
+    <file>add_data.png</file>
+  </qresource>
+</RCC>

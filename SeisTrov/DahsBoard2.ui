@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>944</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.966507, y1:0.255, x2:0.971292, y2:1, stop:0.282297 rgba(0, 22, 40, 255), stop:1 rgba(21, 45, 91, 255));
+border-width: 50px;
+border-color: black;</string>
+  </property>
+  <widget class="QWidget" name="mainPage">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="sideBarFrame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+background-color: qlineargradient(spread:pad, x1:0.966507, y1:0.136, x2:0.971292, y2:1, stop:0.0861244 rgba(0, 0, 11, 173), stop:1 rgba(21, 45, 91, 255));
+
+border: None;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="upperSideBar">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;
+border-color: green;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignRight">
+           <widget class="QPushButton" name="toggleBTN">
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: None;
+color: None;
+background-color: None;
+selection-background-color: blue;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>SideBar_Image/Menu.png</normaloff>SideBar_Image/Menu.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>1</width>
+              <height>30</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="dashboardText">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tlwg Mono</family>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: None;
+color: rgb(204, 204, 204)</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="midLineWidth">
+             <number>-2</number>
+            </property>
+            <property name="text">
+             <string>&lt;strong&gt;SEIS&lt;/strong&gt;TROV</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="dashboardText_2">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tlwg Mono</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: None;
+color: rgb(204, 204, 204)</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="midLineWidth">
+             <number>-2</number>
+            </property>
+            <property name="text">
+             <string>BETA</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignBottom">
+           <widget class="QLabel" name="mainTeks">
+            <property name="font">
+             <font>
+              <family>Sans Serif</family>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: None;
+color:rgb(90, 90, 90)</string>
+            </property>
+            <property name="text">
+             <string>MAIN</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="lowerSideBar">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background-color: none;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="seismicViewerBTN">
+            <property name="font">
+             <font>
+              <family>Noto Sans Mono CJK TC</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: None;
+color: rgb(208, 208, 208);}
+
+QPushButton::hover{
+background-color: rgb(85, 255, 127);
+color: black;}
+</string>
+            </property>
+            <property name="text">
+             <string> Seismic Viewer</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>SideBar_Image/g5728.png</normaloff>SideBar_Image/g5728.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="faultPredictionBTN">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Noto Sans Mono CJK TC</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: None;
+color: rgb(208, 208, 208);}
+
+QPushButton::hover{
+background-color: blue;}</string>
+            </property>
+            <property name="text">
+             <string> Fault Predict</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>SideBar_Image/Fault.png</normaloff>SideBar_Image/Fault.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>60</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="aboutSoftwareBTN">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Noto Sans Mono CJK TC</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: None;
+color: rgb(208, 208, 208);}
+
+QPushButton::hover{
+background-color: red;}</string>
+            </property>
+            <property name="text">
+             <string> About Software</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>SideBar_Image/About.png</normaloff>SideBar_Image/About.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>50</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="contactMeBTN">
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Noto Sans Mono CJK TC</family>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: None;
+color: rgb(208, 208, 208);}
+
+QPushButton::hover{
+background-color: yellow;
+color: blue;}</string>
+            </property>
+            <property name="text">
+             <string> Contact Me</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>SideBar_Image/Contact.png</normaloff>SideBar_Image/Contact.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>60</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="contentFrame">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+border:none
+
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="seismicViewerPage">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="seismicViewerTop">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+background-color: none;
+color: white
+
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item alignment="Qt::AlignBottom">
+               <widget class="QPushButton" name="addSeismicBTN">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>KacstArt</family>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                </property>
+                <property name="text">
+                 <string>Add Seismic</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>SideBar_Image/add_data.png</normaloff>SideBar_Image/add_data.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignBottom">
+               <widget class="QComboBox" name="colorMapBTN">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>23</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox{
+	color: Black;
+	background-color: white;
+
+}</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Grey</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Seismic</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>RdYlBl</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignRight">
+               <widget class="QLabel" name="Widged">
+                <property name="styleSheet">
+                 <string notr="true">background-color:None;
+color:rgb(255, 255, 255, 100)</string>
+                </property>
+                <property name="text">
+                 <string>No Seismic Inputed</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="seismicViewerScreen">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>1000</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+background-color: black;
+    border-style: outset;
+    border-width: 1px;
+    border-color: white;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <zorder>addTsliceBTN_3</zorder>
+             <zorder>seismicViewerBot</zorder>
+             <zorder>seismicViewerBot</zorder>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="seismicViewerBot">
+             <property name="maximumSize">
+              <size>
+               <width>900</width>
+               <height>90</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+background-color: none;
+color: white
+
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QLabel" name="viewText">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777214</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: white;
+background-color: None;</string>
+                  </property>
+                  <property name="text">
+                   <string>View</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="twoDBTN">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QRadioButton {
+    background-color:       None;
+    color:                  white;
+}
+
+QRadioButton::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       Green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       White;
+    border:                 2px solid white;
+}
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>2D</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QRadioButton" name="threeDBTN">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QRadioButton {
+    background-color:       None;
+    color:                  white;
+}
+
+QRadioButton::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QRadioButton::indicator:checked {
+    background-color:       Green;
+    border:                 2px solid white;
+}
+
+QRadioButton::indicator:unchecked {
+    background-color:       White;
+    border:                 2px solid white;
+}
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>3D</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>30</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QGridLayout" name="gridLayout_2">
+                <property name="horizontalSpacing">
+                 <number>13</number>
+                </property>
+                <item row="1" column="6">
+                 <widget class="QLineEdit" name="tSliceNumber_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Serif</family>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: white;
+		color: black
+  }
+
+QLineEdit::disabled {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: Grey;;
+      color: dark Grey;
+  }
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Time Number</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="6">
+                 <widget class="QPushButton" name="addTsliceBTN_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>KacstArt</family>
+                    <pointsize>9</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Add Tslice to 3D</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>SideBar_Image/addBTNS.png</normaloff>SideBar_Image/addBTNS.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>17</width>
+                    <height>32</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QComboBox" name="typeBTN_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Loma</family>
+                    <weight>75</weight>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox{
+	color: Black;
+	background-color: White;
+
+}
+QComboBox::disabled{
+	color: Black;
+	background-color:Grey;
+
+}</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>Inline</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Crossline</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>TimeSlice</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QPushButton" name="addXlnesliceBTN_3">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>KacstArt</family>
+                    <pointsize>9</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Add Xline to 3D</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>SideBar_Image/addBTNS.png</normaloff>SideBar_Image/addBTNS.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>17</width>
+                    <height>32</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="4">
+                 <widget class="QLineEdit" name="xlineSliceNumber_3">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Serif</family>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: white;
+		color: black
+  }
+
+QLineEdit::disabled {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: Grey;;
+      color: dark Grey;
+  }
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Xline Number</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLineEdit" name="twoDNumber_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Serif</family>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: white;
+		color: black
+  }
+
+QLineEdit::disabled {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: Grey;;
+      color: dark Grey;
+  }
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Type Number</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="addInlineBTN_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>KacstArt</family>
+                    <pointsize>9</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Add Inline to 3D</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>SideBar_Image/addBTNS.png</normaloff>SideBar_Image/addBTNS.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>17</width>
+                    <height>32</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2" alignment="Qt::AlignHCenter">
+                 <widget class="QLineEdit" name="inlineNumber_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>DejaVu Serif</family>
+                    <pointsize>8</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: white;
+		color: black
+  }
+
+QLineEdit::disabled {
+      border: 2px solid gray;
+      border-radius: 10px;
+      padding: 0 8px;
+      background: Grey;;
+      color: dark Grey;
+  }
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Inline Number</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="5">
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+          <zorder>seismicViewerTop</zorder>
+          <zorder>seismicViewerScreen</zorder>
+          <zorder>addTsliceBTN_2</zorder>
+          <zorder>seismicViewerBot</zorder>
+         </widget>
+         <widget class="QWidget" name="faultPredictPage">
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>3</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="faultPredictTop">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+background-color: none;
+color: white
+
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QPushButton" name="changeAxisBTN">
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                </property>
+                <property name="text">
+                 <string>Change Axis</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>SideBar_Image/swipe.png</normaloff>SideBar_Image/swipe.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>70</width>
+                  <height>100</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="whatIsThis">
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: None;
+;border: None;
+color: white;
+QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>SideBar_Image/ask.png</normaloff>SideBar_Image/ask.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>100</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="addCNNBTN">
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>KacstArt</family>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                </property>
+                <property name="text">
+                 <string>Add CNN Model</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>SideBar_Image/add_data.png</normaloff>SideBar_Image/add_data.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="addSeismicBTN2">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>KacstArt</family>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                </property>
+                <property name="text">
+                 <string>Add Seismic</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>SideBar_Image/add_data.png</normaloff>SideBar_Image/add_data.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="Widged_2">
+                <property name="styleSheet">
+                 <string notr="true">background-color:None;
+color:rgb(255, 255, 255, 100)</string>
+                </property>
+                <property name="text">
+                 <string>No Seismic Inputed</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="faultPredictScreen">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>1000</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+background-color: black;
+    border-style: outset;
+    border-width: 1px;
+    border-color: white;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <zorder>enchantingText</zorder>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="faultPredictBot">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+background-color: none;
+color: white
+
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QLabel" name="enchantingText">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(103, 103, 103);
+background-color: None;</string>
+                  </property>
+                  <property name="text">
+                   <string>Enchating</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="clipBTN">
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox {
+    background-color:       None;
+    color:                  white;
+}
+
+QCheckBox::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QCheckBox::indicator:checked {
+    background-color:       Green;
+    border:                 2px solid white;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color:       White;
+    border:                 2px solid white;
+}
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Clip</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="gaussianBlurBTN">
+                  <property name="styleSheet">
+                   <string notr="true">QCheckBox {
+    background-color:       None;
+    color:                  white;
+}
+
+QCheckBox::indicator {
+    width:                  10px;
+    height:                 10px;
+    border-radius:          7px;
+}
+
+QCheckBox::indicator:checked {
+    background-color:       Green;
+    border:                 2px solid white;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color:       White;
+    border:                 2px solid white;
+}
+
+</string>
+                  </property>
+                  <property name="text">
+                   <string>Gaussian Blur</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item alignment="Qt::AlignLeft">
+                 <widget class="QPushButton" name="predictFault">
+                  <property name="font">
+                   <font>
+                    <family>KacstArt</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>PREDICT FAULT</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>SideBar_Image/add_data.png</normaloff>SideBar_Image/add_data.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="predictFault_2">
+                  <property name="font">
+                   <font>
+                    <family>KacstArt</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	color: White;
+	background-color: None;
+	border: None;
+}
+
+QPushButton::hover{
+	background-color: orange;	
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>SAVE PREDICTION</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>SideBar_Image/save.png</normaloff>SideBar_Image/save.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="aboutSoftwarePage">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QLabel" name="geInTouvhTXT_2">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>FreeSans</family>
+               <pointsize>12</pointsize>
+               <italic>true</italic>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: None;
+background-color: None;
+color: rgb(116, 103, 255);</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;About Software&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser_2">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: None;
+color: White;</string>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;This UI software is my very first GUI i made using python code. Plotting seismic using PyVista libraries and predicting fault on seismic section using Deep Leaning concept. Convolutional Neural Networks is apllied as main predictor in this software. of course this algorithm still have many flaw, any suggestion and comment of you guys are needed. Feel free to contact me in &amp;quot;Contact me&amp;quot; section.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="label_2">
+             <property name="maximumSize">
+              <size>
+               <width>500</width>
+               <height>500</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>Background/myPhoto.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="contactMePage">
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QLabel" name="geInTouvhTXT">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>FreeSans</family>
+               <pointsize>12</pointsize>
+               <italic>true</italic>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: None;
+background-color: None;
+color: rgb(116, 103, 255);</string>
+             </property>
+             <property name="text">
+              <string>&lt;strong&gt; Get In Touch &lt;/strong&gt; With Me
+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowser">
+             <property name="styleSheet">
+              <string notr="true">border: None;
+color: white;
+</string>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Feel Free to Contact me via Linkedin or Whatsapp:&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Linkedin: www.linkedin.com/in/ketut-toto-suryahadinata-2755a9b0&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Whatsapp: +6289686646839&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Background/Background.qrc"/>
+ </resources>
+ <connections/>
+</ui>

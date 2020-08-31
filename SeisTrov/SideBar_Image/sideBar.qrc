@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="bar">
+    <file>swipe.png</file>
+  </qresource>
+</RCC>

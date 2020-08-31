@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>loadingWindow</class>
+ <widget class="QMainWindow" name="loadingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>704</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="background">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>781</width>
+         <height>591</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>Background/background.gif</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Logo">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>410</y>
+         <width>91</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Background/Background.qrc">:/GIF/Avatar3</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="createdBy">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>375</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>KacstArt</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(121, 146, 255)</string>
+       </property>
+       <property name="text">
+        <string>&lt;strong&gt; Created &lt;/strong&gt; by:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="appName">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>681</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Waree</family>
+         <pointsize>40</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">COLOR: rgb(228, 255, 247)</string>
+       </property>
+       <property name="text">
+        <string>&lt;strong&gt; SEISTROV &lt;/strong&gt; BETA</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="appDesc">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>681</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Waree</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(58, 113, 118)</string>
+       </property>
+       <property name="text">
+        <string>SEISMIC VIEWER AND FAULT PREDICTION</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>320</y>
+         <width>621</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar
+{
+    background: rgb(22, 22, 22);
+    color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-color: rgb(18, 69, 89);
+	color: white;
+    border-radius: 2px;
+    text-align: center;
+}
+QProgressBar::chunk
+{
+    background-color:rgb(58, 113, 118);
+}</string>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="appName_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>370</y>
+         <width>681</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Waree</family>
+         <pointsize>11</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">COLOR: rgb(228, 255, 247)</string>
+       </property>
+       <property name="text">
+        <string>Loading ....</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Background/Background.qrc"/>
+ </resources>
+ <connections/>
+</ui>
