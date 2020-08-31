@@ -8,3 +8,6 @@ Support:
 SEGY, SGY, and npy extension. for 2D SEGY, SGY, or npy data (without geometries) is not supported for current version
 
 <strong> Fault Prediction using Deep Learning is not available for public use so you can contact me for the features </strong>
+
+## Dyniamic DashBoard
+![ezgif com-video-to-gif(1)](https://user-images.githubusercontent.com/59665617/91686378-53f68a80-eb87-11ea-91e2-e50a09e6e3c6.gif)
